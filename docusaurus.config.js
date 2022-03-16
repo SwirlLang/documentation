@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
     title: 'Lambda Code',
     tagline: 'lamdba code programming language',
-    url: 'lc-docs.vercel.app',
+    url: 'https://lc-docs.vercel.app',
     baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
