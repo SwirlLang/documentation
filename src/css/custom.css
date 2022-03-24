@@ -37,6 +37,6 @@
 [data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
 }
-.footerLogoLink_node_modules-\@docusaurus-theme-classic-lib-next-theme-Footer-styles-module {
+a[href^="https://vercel.com/?utm_source=lc-team&utm_campaign=oss"]  {
     opacity: 100 !important
 }
