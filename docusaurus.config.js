@@ -9,7 +9,7 @@ const config = {
     title: 'Lambda Code',
     tagline: 'lamdba code programming language',
     url: 'https://lc-docs.vercel.app',
-    baseUrl: '/',
+    baseUrl: '/docs',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'https://raw.githubusercontent.com/LC-Lang/branding/main/logos/lc-logo.png',
