@@ -1,0 +1,93 @@
+---
+title: Installation
+---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+Lambda Code is available on all major platforms. Linux and Mac OS.
+
+:::success Yes, we hate windows
+Except windows. (obviously it wouldn't be available there. Because we don't consider it major)
+:::
+
+## Linux
+Lambda Code is available on all major distributions of linux. Debian/Ubuntu, Fedora and Arch
+
+### Debian/Ubuntu {#debian-ubuntu}
+Debian 10 or Ubuntu 20.04 or higher is required.
+```shell
+sudo apt install lambda-code
+```
+
+### Fedora
+Fedora 34 or higher is required.
+```shell
+sudo dnf install lambda-code
+```
+
+### Arch Linux
+```shell
+pacman -S lambda-code-bin
+```
+
+## Mac OS
+Lambda Code is available through homebrew on Mac OS.
+```shell
+brew install lambda-code
+```
+
+## Source
+:::caution Not recommended
+Compiling Lambda Code from source is not recommended. 
+:::
+If you want to compile Lambda Code yourself from source you can follow the guide below.
+
+#### requirements
+* A linux based distro
+* Git (version >= 2.35)
+* GCC compiler (version >= 6.1, C++ >= 14)
+
+Install the required build dependencies and programs:
+<Tabs>
+<TabItem value="ubuntu" label="Ubuntu">
+
+```shell
+sudo apt install git build-essentials
+```
+
+</TabItem>
+<TabItem value="fedora" label="Fedora">
+
+```shell
+sudo dnf install gcc
+```
+
+</TabItem>
+<TabItem value="arch" label="Arch">
+
+```shell
+pacman -S git gcc
+```
+
+</TabItem>
+</Tabs>
+
+### Clone the repo
+
+```shell
+git clone https://github.com/LC-Lang/Lambda-Code
+```
+It will create a folder on your pc called Lambda-Code. `cd` into the folder.
+
+### Build the compiler
+
+`cd` into the core folder:
+```shell
+cd core
+```
+Build the compiler using gcc:
+```shell
+g++ lcc.cpp -o lcc
+```
+It will create a binary in the core folder called **lcc**.
+Now run the compiler using `./lcc` command. It will show the help message.
