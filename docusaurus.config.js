@@ -9,7 +9,7 @@ const config = {
     title: "Swirl",
     tagline: "Swirl programming language",
     url: "https://swirl-docs.vercel.app",
-    baseUrl: "/",
+    baseUrl: "/docs/",
     onBrokenLinks: "throw",
     onBrokenMarkdownLinks: "warn",
     favicon:
@@ -27,7 +27,7 @@ const config = {
                     // Please change this to your repo.
                     editUrl:
                         "https://github.com/SwirlLang/documentation/tree/master/",
-                    routeBasePath: "/docs",
+                    routeBasePath: "/",
                 },
                 blog: false,
                 theme: {
