@@ -2,11 +2,11 @@
 sidebar_position: 1
 id: introduction
 title: Introduction
-description: Docusaurus was designed from the ground up to be easily installed and used to get your website up and running quickly.
+description: A High Level, statically typed, Compiled programming language
 slug: /
 ---
 
-Lambda Code is a open source programming language.
+Swirl is a open source programming language.
 
 -   Easy learning curve
 -   Develop faster with a clean and concise syntax
@@ -23,13 +23,13 @@ Lambda Code is a open source programming language.
 
 ## Quick start
 
-Get started with **Lambda Code in just 5 minutes**
+Get started with **Swirl in just 5 minutes**
 
-Install Lambda Code:
+Install Swirl:
 
-check out the [installation](getting-started/installation) page for installing Lambda Code on your preferred OS. We prefer Linux though
+check out the [installation](getting-started/installation) page for installing Swirl on your preferred OS. We prefer Linux though
 
-After installing Lambda Code compile a file and run it:
+After installing Swirl compile a file and run it:
 
 ```shell
 lcc main.lc && ./main
@@ -39,4 +39,4 @@ If you want a more in depth tutorial check out the [Getting Started](getting-sta
 
 ## Something missing?
 
-If you find issues with the documentation or have suggestions on how to improve the documentation or the project in general, please submit an issue at [Github](https://github.com/LC-Lang/Lambda-Code/issues).
+If you find issues with the documentation or have suggestions on how to improve the documentation or the project in general, please submit an issue at [Github](https://github.com/SwirlLang/Swirl/issues).

@@ -37,6 +37,6 @@
 [data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
 }
-a[href^="https://vercel.com/?utm_source=lc-team&utm_campaign=oss"]  {
+a[href^="https://vercel.com/?utm_source=swirl-team&utm_campaign=oss"]  {
     opacity: 100 !important
 }

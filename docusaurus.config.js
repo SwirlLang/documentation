@@ -6,15 +6,15 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: "Lambda Code",
-    tagline: "lamdba code programming language",
-    url: "https://lc-docs.vercel.app",
-    baseUrl: "/docs/",
+    title: "Swirl",
+    tagline: "Swirl programming language",
+    url: "https://swirl-docs.vercel.app",
+    baseUrl: "/",
     onBrokenLinks: "throw",
     onBrokenMarkdownLinks: "warn",
     favicon:
-        "https://raw.githubusercontent.com/LC-Lang/branding/main/logos/lc-logo.png",
-    organizationName: "LC-Lang", // Usually your GitHub org/user name.
+        "https://raw.githubusercontent.com/SwirlLang/branding/main/logos/Swirl%20monogram%20logo.png",
+    organizationName: "SwirlLang", // Usually your GitHub org/user name.
     projectName: "documentation", // Usually your repo name.
 
     presets: [
@@ -26,8 +26,8 @@ const config = {
                     sidebarPath: require.resolve("./sidebars.js"),
                     // Please change this to your repo.
                     editUrl:
-                        "https://github.com/LC-Lang/documentation/tree/master/",
-                    routeBasePath: "/",
+                        "https://github.com/SwirlLang/documentation/tree/master/",
+                    routeBasePath: "/docs",
                 },
                 blog: false,
                 theme: {
@@ -40,15 +40,15 @@ const config = {
     themeConfig:
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
-            image: "https://raw.githubusercontent.com/LC-Lang/branding/main/logos/lc-logo.png",
+            image: "https://raw.githubusercontent.com/SwirlLang/branding/main/logos/Swirl%20monogram%20logo.png",
             colorMode: {
                 defaultMode: "dark",
             },
             navbar: {
-                title: "Lambda Code",
+                title: "Swirl",
                 logo: {
-                    alt: "LC logo",
-                    src: "https://raw.githubusercontent.com/LC-Lang/branding/main/logos/lc-logo.png",
+                    alt: "Swirl logo",
+                    src: "https://raw.githubusercontent.com/SwirlLang/branding/main/logos/Swirl%20monogram%20logo.png",
                 },
                 items: [
                     {
@@ -58,7 +58,7 @@ const config = {
                         label: "Docs",
                     },
                     {
-                        href: "https://github.com/LC-Lang/lambda-code",
+                        href: "https://github.com/SwirlLang/swirl",
                         label: "GitHub",
                         position: "right",
                     },
@@ -68,11 +68,11 @@ const config = {
                 style: "dark",
                 links: [
                     {
-                        title: "Lambda Code",
+                        title: "Swirl",
                         items: [
                             {
                                 label: "About",
-                                href: "https://lambda-code.vercel.app/about",
+                                href: "https://swirl-lang.vercel.app/about",
                             },
                         ],
                     },
@@ -90,7 +90,7 @@ const config = {
                         items: [
                             {
                                 label: "GitHub",
-                                href: "https://github.com/LC-Lang/lambda-code",
+                                href: "https://github.com/SwirlLang/swirl",
                             },
                         ],
                     },
@@ -98,7 +98,7 @@ const config = {
                 logo: {
                     alt: "Powered by Vercel",
                     src: "https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg",
-                    href: "https://vercel.com/?utm_source=lc-team&utm_campaign=oss",
+                    href: "https://vercel.com/?utm_source=swirl-team&utm_campaign=oss",
                     height: 35,
                 },
                 copyright: `Copyright © ${new Date().getFullYear()} Mrinmoy Haloi`,

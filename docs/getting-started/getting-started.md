@@ -1,10 +1,10 @@
 ---
 tags: [Getting started]
 title: Getting Started
-description: Documentation for Lambda Code programming language
+description: Documentation for Swirl programming language
 ---
 
-Get started with **Lambda Code easily**.
+Get started with **Swirl easily**.
 
 ## Installation
 
@@ -13,10 +13,10 @@ Check out the [installation](installation) page for more options of downloading.
 Assuming you are using a debian based distro use apt to install it:
 
 ```shell
-sudo apt install lambda-code
+sudo apt install Swirl
 ```
 
-It will install Lambda Code on your system.
+It will install Swirl on your system.
 
 It will contain the LPM package manager, the compiler and the standard libraries.
 
@@ -25,19 +25,21 @@ It will contain the LPM package manager, the compiler and the standard libraries
 create a file for compiling it. Use your preferred editor.
 
 ```shell
-nano main.lc
+nano main.sw
 ```
+
 Then paste the following in the file
+
 ```lc title="main.lc"
-print("Hello World!, I am learning Lambda Code")
+print("Hello World!, I am learning Swirl")
 ```
 
 now compile the file
 
 ```shell
-lcc main.lc
+lcc main.sw
 ```
 
 It will make a binary called **main** in the current folder. Run it using `./main`.
 
-Congrats you have made your first Lambda Code app.
+Congrats you have made your first Swirl app.

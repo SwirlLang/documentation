@@ -1,53 +1,65 @@
 ---
 title: Installation
 ---
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
-Lambda Code is available on all major platforms. Linux and Mac OS.
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+Swirl is available on all major platforms. Linux and Mac OS.
 
 :::success Yes, we hate windows
 Except windows. (obviously it wouldn't be available there. Because we don't consider it major)
 :::
 
 ## Linux
-Lambda Code is available on all major distributions of linux. Debian/Ubuntu, Fedora and Arch
+
+Swirl is available on all major distributions of linux. Debian/Ubuntu, Fedora and Arch
 
 ### Debian/Ubuntu {#debian-ubuntu}
+
 Debian 10 or Ubuntu 20.04 or higher is required.
+
 ```shell
-sudo apt install lambda-code
+sudo apt install Swirl
 ```
 
 ### Fedora
+
 Fedora 34 or higher is required.
+
 ```shell
-sudo dnf install lambda-code
+sudo dnf install Swirl
 ```
 
 ### Arch Linux
+
 ```shell
-pacman -S lambda-code-bin
+sudo pacman -S Swirl-bin
 ```
 
 ## Mac OS
-Lambda Code is available through homebrew on Mac OS.
+
+Swirl is available through homebrew on Mac OS.
+
 ```shell
-brew install lambda-code
+brew install Swirl
 ```
 
 ## Source
+
 :::caution Not recommended
-Compiling Lambda Code from source is not recommended. 
+Compiling Swirl from source is not recommended.
 :::
-If you want to compile Lambda Code yourself from source you can follow the guide below.
+If you want to compile Swirl yourself from source you can follow the guide below.
 
 #### requirements
-* A linux based distro
-* Git (version >= 2.35)
-* GCC compiler (version >= 6.1, C++ >= 14)
+
+-   A linux based distro
+-   Git (version >= 2.35)
+-   GCC compiler (version >= 6.1, C++ >= 14)
 
 Install the required build dependencies and programs:
+
 <Tabs>
 <TabItem value="ubuntu" label="Ubuntu">
 
@@ -75,19 +87,24 @@ pacman -S git gcc
 ### Clone the repo
 
 ```shell
-git clone https://github.com/LC-Lang/Lambda-Code
+git clone https://github.com/SwirlLang/Swirl
 ```
-It will create a folder on your pc called Lambda-Code. `cd` into the folder.
+
+It will create a folder on your pc called Swirl. `cd` into the folder.
 
 ### Build the compiler
 
 `cd` into the core folder:
+
 ```shell
 cd core
 ```
+
 Build the compiler using gcc:
+
 ```shell
-g++ lcc.cpp -o lcc
+g++ swirl.cpp -o swirl
 ```
-It will create a binary in the core folder called **lcc**.
-Now run the compiler using `./lcc` command. It will show the help message.
+
+It will create a binary in the core folder called **swirl**.
+Now run the compiler using `./swirl` command. It will show the help message.
