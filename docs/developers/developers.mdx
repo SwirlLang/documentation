@@ -1,0 +1,115 @@
+---
+tags: [developers, development guide, development setup]
+title: Developers
+description: Guide for developers who are looking to contribute to Swirl
+sidebar_position: 4
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+if you are a developer who is looking to contribute to Swirl core then read this guide. It will guide you through on how to setup your environment to develop Swirl.
+
+## compiling from source
+Follow the steps below to compile the source
+
+#### requirements
+
+-   A Linux based distro or Mac OS
+-   Git (version >= 2.35)
+-   GCC compiler (version >= 6.1, C++ >= 14)
+-   CMake (version >= 3.5)
+
+Install the required build dependencies and programs:
+
+<Tabs>
+<TabItem value="ubuntu" label="Ubuntu">
+
+```shell
+sudo apt install git build-essentials cmake
+```
+
+</TabItem>
+<TabItem value="fedora" label="Fedora">
+
+```shell
+sudo dnf install gcc git cmake
+```
+
+</TabItem>
+<TabItem value="arch" label="Arch">
+
+```shell
+pacman -S git gcc cmake
+```
+
+</TabItem>
+</Tabs>
+
+### Clone the repo
+
+```shell
+git clone https://github.com/SwirlLang/Swirl
+```
+
+It will create a folder on your pc called Swirl.
+
+We recommended vscode for the development of Swirl. But if you prefer to do it from the cli go to [cli](#cli) section
+
+## Compiling
+
+### Visual Studio Code
+`cd` into the cloned folder and open it in vscode using `code .`
+
+install the required extensions.
+-   C/C++ language support by Microsoft
+-   CMake Tools by Microsoft
+
+press ctrl+p and run the following command
+```
+ext install ms-vscode.cpptools
+```
+```
+ext install ms-vscode.cmake-tools
+```
+
+#### setup cmake
+create a folder in the project directory named .vscode. Inside it create a file named settings.json and paste the following content
+
+```json
+{
+    "cmake.sourceDirectory": "${workspaceFolder}/Swirl"
+}
+```
+
+It should configure the project if not run the `CMake: Configure` command in the command pallate.
+
+now click this button to build and run the binary
+
+![run the app](/img/run-button.png)
+
+the terminal should show this help message. If it did then the project has been successfully configured.
+
+![terminal output](/img/terminal-output.png)
+
+### cli
+
+`cd` into the cloned folder and follow the steps below.
+
+#### Configure CMake
+```bash
+cmake -B build - DCMAKE_BUILD_TYPE=Debug -S Swirl
+```
+
+#### Build the project
+```bash
+cmake --build build --config Debug
+```
+#### Run the app
+```bash
+./build/swirl
+```
+
+It should show the help message if it did then it has been configured correctly.
+
+![](/img/terminal-output.png)

@@ -11,6 +11,7 @@ const config = {
     url: "https://swirl-docs.vercel.app",
     baseUrl: "/docs/",
     onBrokenLinks: "throw",
+    staticDirectories: ['static'],
     onBrokenMarkdownLinks: "warn",
     favicon:
         "https://raw.githubusercontent.com/SwirlLang/branding/main/logos/Swirl-monogram-logo.png",
