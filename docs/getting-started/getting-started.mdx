@@ -3,6 +3,8 @@ tags: [Getting started]
 title: Getting Started
 description: Getting started guide
 ---
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
 
 Get started with **Swirl easily** in just 5 minutes.
 
@@ -10,11 +12,32 @@ Get started with **Swirl easily** in just 5 minutes.
 
 Check out the [installation](installation) page for more options of downloading. Here only linux is shown.
 
-Assuming you are using a debian based distro use apt to install it:
+Assuming you are using a debian, fedora or a Arch based distro use the below commands to install Swirl:
+
+<Tabs>
+<TabItem value="debian" label="Debian">
 
 ```shell
 sudo apt install Swirl
 ```
+
+</TabItem>
+<TabItem value="fedora" label="Fedora">
+
+```shell
+sudo dnf install Swirl
+```
+
+</TabItem>
+<TabItem value="arch" label="Arch">
+
+```shell
+pacman -S Swirl
+```
+
+</TabItem>
+</Tabs>
+
 
 It will install Swirl on your system.
 
@@ -25,23 +48,23 @@ It will contain the Swirl compiler and the standard libraries.
 create a file for compiling it. Use your preferred editor.
 
 ```shell
-nano main.sw
+nano test.sw
 ```
 
 Then paste the following in the file or write your own
 
-```lc title="main.lc"
+```sw title="test.sw"
 print("Hello World!, I am learning Swirl")
 ```
 
 now compile the file
 
 ```shell
-swirl main.sw
+swirl test.sw
 ```
 
-It will make a binary called **main** in the current folder. Run it using `./main`.
+It will make a binary called **test** in the current folder. Execute it using `./test`.
 
 It should output `Hello World!, I am learning Swirl`.
 
-Congrats you have made your first Swirl app.
+Congrats you've made your first Swirl app.

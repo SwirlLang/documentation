@@ -6,21 +6,22 @@ description: A High Level, statically typed, Compiled programming language
 slug: /
 ---
 
-Swirl is a high level programming language.
+Swirl is a general purpose, high level programming language. It accommodates features like static typing, object-oriented, functional etc.
 
-Some of the features of Swirl:
+Some of the key features of Swirl:
 -   Easy learning curve
 -   Develop faster with a clean and concise syntax
--   Make performant apps
+-   Make efficient apps
 -   Available for all major platforms
 <details>
   <summary>Except windows. Click to know why</summary>
   <div>
-    <div>Because it sucks. Move to Linux</div>
+    <div>Because it sucks. We don't consider it a OS. Move to Linux</div>
   </div>
 </details>
 -   Make amazing things with the powerful set of standard libraries
--   And first class support for Linux
+-   Awesome package management
+-   First class support for Linux
 -   No support for Windows
 
 ## Quick start

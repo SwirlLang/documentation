@@ -47,64 +47,7 @@ brew install Swirl
 
 ## Source
 
-:::caution Not recommended
-Compiling Swirl from source is not recommended.
+:::caution Developers only
+This section is only intended for developers who are willing to develop Swirl
 :::
-If you want to compile Swirl yourself from source you can follow the guide below.
-
-#### requirements
-
--   A linux based distro
--   Git (version >= 2.35)
--   GCC compiler (version >= 6.1, C++ >= 14)
-
-Install the required build dependencies and programs:
-
-<Tabs>
-<TabItem value="ubuntu" label="Ubuntu">
-
-```shell
-sudo apt install git build-essentials
-```
-
-</TabItem>
-<TabItem value="fedora" label="Fedora">
-
-```shell
-sudo dnf install gcc
-```
-
-</TabItem>
-<TabItem value="arch" label="Arch">
-
-```shell
-pacman -S git gcc
-```
-
-</TabItem>
-</Tabs>
-
-### Clone the repo
-
-```shell
-git clone https://github.com/SwirlLang/Swirl
-```
-
-It will create a folder on your pc called Swirl. `cd` into the folder.
-
-### Build the compiler
-
-`cd` into the core folder:
-
-```shell
-cd core
-```
-
-Build the compiler using gcc:
-
-```shell
-g++ swirl.cpp -o swirl
-```
-
-It will create a binary in the core folder called **swirl**.
-Now run the compiler using `./swirl` command. It will show the help message.
+If you want to compile Swirl yourself from source follow the [developers guide](/developers)
