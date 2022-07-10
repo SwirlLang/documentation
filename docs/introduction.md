@@ -13,16 +13,8 @@ Some of the key features of Swirl:
 -   Develop faster with a clean and concise syntax
 -   Make efficient apps
 -   Available for all major platforms
-<details>
-  <summary>Except windows. Click to know why</summary>
-  <div>
-    <div>Because it sucks. We don't consider it a OS. Move to Linux</div>
-  </div>
-</details>
 -   Make amazing things with the powerful set of standard libraries
 -   Awesome package management
--   First class support for Linux
--   No support for Windows
 
 ## Quick start
 
@@ -30,7 +22,7 @@ Get started with **Swirl in just 5 minutes**
 
 Install Swirl:
 
-check out the [installation](getting-started/installation) page for installing Swirl on your preferred OS. We prefer Linux though
+check out the [installation](getting-started/installation) page for installing Swirl on your preferred OS.
 
 After installing Swirl compile a file and run it:
 
