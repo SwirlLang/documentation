@@ -8,10 +8,10 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
     title: "Swirl",
     tagline: "Swirl programming language",
-    url: "https://swirl-docs.vercel.app",
-    baseUrl: "/docs/",
+    url: "https://swirl-lang.vercel.app",
+    baseUrl: "/",
     onBrokenLinks: "throw",
-    staticDirectories: ['static'],
+    staticDirectories: ["static"],
     onBrokenMarkdownLinks: "warn",
     favicon:
         "https://raw.githubusercontent.com/SwirlLang/branding/main/logos/Swirl-monogram-logo.png",
@@ -28,9 +28,7 @@ const config = {
                     // Please change this to your repo.
                     editUrl:
                         "https://github.com/SwirlLang/documentation/tree/master/",
-                    routeBasePath: "/",
                 },
-                blog: false,
                 theme: {
                     customCss: require.resolve("./src/css/custom.css"),
                 },
@@ -50,6 +48,8 @@ const config = {
                 logo: {
                     alt: "Swirl logo",
                     src: "https://raw.githubusercontent.com/SwirlLang/branding/main/logos/Swirl-monogram-logo.png",
+                    href: "https://swirl-mrinmoyhaloi-swirl-team.vercel.app",
+                    target: "_self",
                 },
                 items: [
                     {
@@ -58,6 +58,7 @@ const config = {
                         position: "left",
                         label: "Docs",
                     },
+                    { to: "blog", label: "Blog", position: "left" },
                     {
                         href: "https://github.com/SwirlLang/swirl",
                         label: "GitHub",
