@@ -48,7 +48,7 @@ const config = {
                 logo: {
                     alt: "Swirl logo",
                     src: "https://raw.githubusercontent.com/SwirlLang/branding/main/logos/Swirl-monogram-logo.png",
-                    href: "https://swirl-mrinmoyhaloi-swirl-team.vercel.app",
+                    href: "https://swirl-lang.vercel.app",
                     target: "_self",
                 },
                 items: [
