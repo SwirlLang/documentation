@@ -73,8 +73,24 @@ const config = {
                         title: "Swirl",
                         items: [
                             {
+                                html: "A modern, beginner-friendly language that combines power, performance, and simplicity.",
+                            },
+                        ],
+                    },
+                    {
+                        title: "Info",
+                        items: [
+                            {
                                 label: "About",
                                 href: "https://swirl-lang.vercel.app/about",
+                            },
+                            {
+                                label: "Contact",
+                                href: "https://swirl-lang.vercel.app/contact",
+                            },
+                            {
+                                label: "Download",
+                                href: "https://swirl-lang.vercel.app/download",
                             },
                         ],
                     },
@@ -83,16 +99,15 @@ const config = {
                         items: [
                             {
                                 label: "Discord",
-                                href: "https://discord.gg/RSJ5TUDdqx",
+                                href: "https://swirl-lang.vercel.app/discord",
                             },
-                        ],
-                    },
-                    {
-                        title: "More",
-                        items: [
                             {
                                 label: "GitHub",
                                 href: "https://github.com/SwirlLang/swirl",
+                            },
+                            {
+                                label: "Twitter",
+                                href: "https://twitter.com/SwirlLang",
                             },
                         ],
                     },
@@ -103,13 +118,27 @@ const config = {
                     href: "https://vercel.com/?utm_source=swirl-team&utm_campaign=oss",
                     height: 35,
                 },
-                copyright: `Copyright © ${new Date().getFullYear()} Mrinmoy Haloi`,
+                copyright: `Made by <a href="https://github.com/MrinmoyHaloi" target="_blank">Mrinmoy Haloi</a>`,
             },
             prism: {
                 theme: lightCodeTheme,
                 darkTheme: darkCodeTheme,
             },
         }),
+        themes: [
+            [
+              // @ts-ignore
+              require.resolve("@easyops-cn/docusaurus-search-local"),
+              /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+              // @ts-ignore
+              ({
+                // ... Your options.
+                // `hashed` is recommended as long-term-cache of index file is possible.
+                hashed: true,
+                removeDefaultStopWordFilter: true,
+              }),
+            ],
+          ],
 };
 
 module.exports = config;

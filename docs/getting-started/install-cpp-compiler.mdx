@@ -1,0 +1,54 @@
+---
+title: Install C++ compiler
+description: This guide will help you install a C++ compiler in your system.
+sidebar_position: 2
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+import Admonition from '@theme/Admonition';
+
+A C++ compiler is required to compile swirl programs. Because we convert our swirl programs to c++ programs and that needs to be compiled down into machine code.
+
+For Swirl a C++ 20 compiler is required.
+
+## Linux
+
+C++ compilers come preinstalled on most of the linux distros. But if its not follow the tutorial.
+
+### Ubuntu/Debian
+
+```shell
+sudo apt install g++
+```
+
+### Fedora
+
+```shell
+sudo dnf install gcc
+```
+
+### Arch Linux
+
+```shell
+sudo pacman -S gcc
+```
+
+After installing the C++ compiler, you can verify the installation by checking the version number:
+
+```shell
+g++ --version
+```
+
+## Windows
+
+<Admonition type="caution" icon="🚧" title="Work in progress">
+  <p>
+    This section is work in progress. Come back later. 
+  </p>
+</Admonition>
+
+
+
+We recommend [GCC](https://gcc.gnu.org/), [Clang](https://clang.llvm.org/) for Linux and macOS,
+and [tdm-gcc](https://jmeubank.github.io/tdm-gcc/), [Mingw-W64](https://mingw-w64.org/) for Windows.

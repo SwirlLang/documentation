@@ -1,54 +1,181 @@
 ---
 title: Installation
+sidebar_position: 1
 ---
 
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
 
-Swirl is available on Linux and Windows.
+Swirl is available on all major platforms. Linux, macOS, and Windows.
 
-## Linux
+## Requirements
 
-Swirl is available on all major distributions of linux. Debian/Ubuntu, Fedora and Arch
+A C++ compiler is needed for Swirl to compile the programs. Read the guide on how to [install a C++ compiler](install-cpp-compiler.mdx).
 
-### Debian/Ubuntu {#debian-ubuntu}
 
-Debian 10 or Ubuntu 20.04 or higher is required.
+## Download
 
-```shell
-sudo apt install Swirl
-```
+Download the latest verson of Swirl from the [website](https://swirl-lang.vercel.app/download) or the [GitHub](https://github.com/SwirlLang/Swirl/releases) release page.
 
-### Fedora
+On Linux and macOS, you may need to make the binary executable with `chmod +x {binary}`.
 
-Fedora 34 or higher is required.
+Test to see if its working.
 
-```shell
-sudo dnf install Swirl
-```
-
-### Arch Linux
+<Tabs groupId="os">
+<TabItem value="linux" label="Linux">
 
 ```shell
-sudo pacman -S Swirl
+./swirl-linux --version
 ```
 
-## Windows
-
-Swirl has been tested on Windows 10 only.
-
-You can download the Windows installer from the [download page](https://swirl-lang.vercel.app/download/windows).
-After downloading the installer follow the instructions to install Swirl.
-
-After installing Swirl you can run it from cmd prompt.
+</TabItem>
+<TabItem value="macos" label="macOS">
 
 ```shell
-swirl test.sw
+./swirl-macos --version
 ```
+
+</TabItem>
+<TabItem value="windows" label="Windows">
+
+```shell
+swirl-windows.exe --version
+```
+
+</TabItem>
+</Tabs>
 
 ## Source
 
-:::caution Developers only
-This section is only intended for developers who are willing to contribute to Swirl
-:::
-If you want to compile Swirl yourself from source follow the [developers guide](../developers)
+If you want to compile Swirl from source, follow the steps below.
+
+### Requirements
+
+-   Linux, macOS, or Windows
+-   Git (version 2.35 and higher)
+-   C++ compiler (C++ 14 and higher)
+-   CMake (version 3.5 and higher)
+
+Read the [guide](install-cpp-compiler.mdx) on installing a C++ compiler.
+
+Install the required build dependencies and programs:
+
+### Linux
+
+<Tabs>
+<TabItem value="ubuntu" label="Ubuntu">
+
+```shell
+sudo apt install git cmake
+```
+
+</TabItem>
+<TabItem value="fedora" label="Fedora">
+
+```shell
+sudo dnf install git cmake
+```
+
+</TabItem>
+<TabItem value="arch" label="Arch">
+
+```shell
+sudo pacman -S git cmake
+```
+
+</TabItem>
+</Tabs>
+
+### Windows
+```shell
+choco install git cmake
+```
+
+### Clone the repo
+
+```shell
+git clone https://github.com/SwirlLang/Swirl
+```
+
+It will clone into a folder called Swirl.
+
+### Building
+
+### Visual Studio Code
+
+`cd` into the cloned folder and open it in vscode using `code .`
+
+install the required extensions: 
+
+press <kbd>ctrl+p</kbd> and run the following command
+```
+ext install ms-vscode.cmake-tools
+```
+
+#### Setup cmake
+create a folder in the project directory named .vscode. Inside it create a file named settings.json and paste the following content
+
+```json
+{
+    "cmake.sourceDirectory": "${workspaceFolder}/Swirl"
+}
+```
+Now configure the project using the `CMake: Configure` from the command pallate.
+
+now click this play button to build and run the binary
+
+![run the app](/img/run-button.png)
+
+the terminal should show this help message. If it did then Swirl has been compiled successfully.
+
+![terminal output](/img/terminal-output.png)
+
+### Command line
+
+`cd` into the cloned folder and follow the steps below.
+
+#### Configure CMake
+<Tabs groupId="os">
+<TabItem value="linux" label="Linux">
+
+```bash
+cmake -B build -DCMAKE_BUILD_TYPE=Debug -S Swirl
+```
+
+</TabItem>
+<TabItem value="windows" label="Windows">
+
+```bash
+cmake -B build -DCMAKE_BUILD_TYPE=Debug -S Swirl -G "MinGW Makefiles"
+```
+
+</TabItem>
+</Tabs>
+
+#### Build the project
+```bash
+cmake --build build --config Debug
+```
+
+#### Run the app
+<Tabs groupId="os">
+<TabItem value="linux" label="Linux">
+
+```shell
+./build/swirl
+```
+
+</TabItem>
+<TabItem value="windows" label="Windows">
+
+```shell
+.\build\swirl.exe
+```
+
+</TabItem>
+</Tabs>
+
+
+It should show the help message if it did then it has been compiled succesfully.
+
+![terminal output - Swirl help](/img/terminal-output.png)

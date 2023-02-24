@@ -3,84 +3,61 @@ tags: [Getting started]
 title: Getting Started
 description: Getting started guide
 id: getting-started
-slug: /
 ---
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
 
-## Introduction
+This guide will help you get started with the Swirl programming language.
 
-Swirl is a programming language that focuses on writing <b>elegant</b> and <b>readable</b> code. That can maximize your productivity and minimize effort.
+## Installation
 
-Some of the key features of Swirl:
--   Easy learning curve
--   Clean and concise syntax
--   Efficient apps
--   Available for all major platforms
--   Powerful set of standard libraries
--   Awesome package management
+Before getting started make sure Swirl is installed in your system. Follow the [installation](installation.mdx) guide for more info.
 
-## Get started
+After installing Swirl make sure its working properly by running
+```shell
+swirl --version
+```
 
-Get started with **Swirl in just 5 minutes**
+You are now ready to create your first swirl program.
 
-### Installation
+### Write a program
 
-Check out the [installation](getting-started/installation) page for more options of downloading. Here only linux is shown.
+Create a new Swirl file and save it with the **.sw** or **.swirl** extension. For example, **hello.sw**.
 
-Assuming you are using a debian, fedora or a Arch based distro use the below commands to install Swirl:
+Then write the following or you can write your own.
 
-<Tabs>
-<TabItem value="debian" label="Debian">
+```sw title="hello.sw"
+//  This is a comment in Swirl
+func sayHello(string name) {
+  print("Hello, " + name + "!")
+}
+
+// Call the sayHello function
+sayHello("world")
+```
+
+This is a simple Swirl program that defines a function called **sayHello**, which takes a single parameter of type **string**. The function then prints the message "Hello, " followed by the value of the **name** parameter, followed by an exclamation mark.
+
+After defining the **sayHello** function, the code then calls this function, passing in the string **"world"** as the argument. When the program is run, the output on the console will be "Hello, world!".
+
+Overall, this code serves as a basic example of how to define functions and pass parameters in Swirl. For a more in depth tutorial check the [Swirl tour](../swirl-tour.mdx).
+
+### Compilation
+Run the following commands to compile and run the program.
 
 ```shell
-sudo apt install Swirl
+swirl hello.sw --run
 ```
 
-</TabItem>
-<TabItem value="fedora" label="Fedora">
+It will compile and run the program.
 
-```shell
-sudo dnf install Swirl
-```
-
-</TabItem>
-<TabItem value="arch" label="Arch">
-
-```shell
-sudo pacman -S Swirl
-```
-
-</TabItem>
-</Tabs>
-
-
-It will install Swirl on your system.
-
-It will contain the Swirl compiler and the standard libraries.
-
-### Compile a file
-
-create a file for compiling it. Use your preferred editor.
-
-```shell
-nano test.sw
-```
-
-Then paste the following in the file or write your own
-
-```sw title="test.sw"
-print("Hello World!, I am learning Swirl")
-```
-
-now compile the file
-
-```shell
-swirl test.sw
-```
-
-It will make a binary called **test** in the current folder. Execute it using `./test`.
-
-It should output `Hello World!, I am learning Swirl`.
+If everything worked correctly it should output `Hello, world!`.
 
 Congrats you've made your first Swirl app.
+
+Check out the [Swirl Tour](../swirl-tour.mdx), for a introduction to the most important concepts and features of the language.
+
+
+To fully utilize the power of Swirl and enhance your programming experience, setting up a development environment is a crucial next step. For detailed instructions, refer to our guide on Setting up a [Development Environment](dev-env-setup.mdx).
+
+If you run into any issues, feel free to reach out for help on our [Discord community](/discord).
