@@ -14,7 +14,7 @@ const config = {
     staticDirectories: ["static"],
     onBrokenMarkdownLinks: "warn",
     favicon:
-        "https://raw.githubusercontent.com/SwirlLang/branding/main/logos/Swirl-monogram-logo.png",
+        "https://raw.githubusercontent.com/SwirlLang/branding/main/logos/logo-transparent.png",
     organizationName: "SwirlLang", // Usually your GitHub org/user name.
     projectName: "documentation", // Usually your repo name.
 
@@ -39,7 +39,7 @@ const config = {
     themeConfig:
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
-            image: "https://raw.githubusercontent.com/SwirlLang/branding/main/logos/Swirl-monogram-logo.png",
+            image: "https://raw.githubusercontent.com/SwirlLang/branding/main/logos/logo.png",
             colorMode: {
                 defaultMode: "dark",
             },
@@ -47,7 +47,7 @@ const config = {
                 title: "Swirl",
                 logo: {
                     alt: "Swirl logo",
-                    src: "https://raw.githubusercontent.com/SwirlLang/branding/main/logos/Swirl-monogram-logo.png",
+                    src: "https://raw.githubusercontent.com/SwirlLang/branding/main/logos/logo-transparent.png",
                     href: "https://swirl-lang.vercel.app",
                     target: "_self",
                 },
